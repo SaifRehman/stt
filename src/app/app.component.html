@@ -1,0 +1,192 @@
+<!-- <div class="rtc-dev">
+  <div class="btn-div">
+    <button (click)="startVoiceRecord()">
+      <svg width="24" height="24" viewBox="0 0 24 24">
+        <path
+          d="M12 15c1.66 0 2.99-1.34 2.99-3L15 6c0-1.66-1.34-3-3-3S9 4.34 9 6v6c0 1.66 1.34 3 3 3zm5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 15 6.7 12H5c0 3.42 2.72 6.23 6 6.72V22h2v-3.28c3.28-.48 6-3.3 6-6.72h-1.7z" />
+        <path d="M0 0h24v24H0z" fill="none" /></svg>
+    </button>
+    <p style="font-family: monospace;">{{_recordRTC?.recordingTimer}}</p>
+    <ng-template [ngIf]="_recordRTC?.blobUrl">
+      <audio [src]="_recordRTC?.blobUrl" controls></audio>
+    </ng-template>
+  </div>
+</div> -->
+
+
+<div class='container-fluid'>
+  <div class='col-12'>
+    <ngb-carousel #mycarousel>
+      <ng-template ngbSlide id="audio1">
+        <img src="./assets/1.png" alt="Delhi Metro">
+        <div class="carousel-caption">
+          <h1 style="color: black">"Opeshift get deployment sets"</h1>
+        </div>
+        <div class="rtc-dev">
+          <div class="btn-div">
+            <button (click)="left()" style="width: 50px; height: 50px">
+              <img src="./assets/left.svg" alt="lwft" width="15" height="15">
+            </button>
+          </div>
+          <div class="btn-div">
+            <button (click)="retry()">
+              <img src="./assets/retry.svg" alt="lwft" width="24" height="24">
+            </button>
+          </div>
+          <div class="btn-div">
+            <button (click)="startVoiceRecord()">
+              <svg width="24" height="24" viewBox="0 0 24 24">
+                <path
+                  d="M12 15c1.66 0 2.99-1.34 2.99-3L15 6c0-1.66-1.34-3-3-3S9 4.34 9 6v6c0 1.66 1.34 3 3 3zm5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 15 6.7 12H5c0 3.42 2.72 6.23 6 6.72V22h2v-3.28c3.28-.48 6-3.3 6-6.72h-1.7z" />
+                <path d="M0 0h24v24H0z" fill="none" /></svg>
+            </button>
+            <p style="font-family: monospace;">{{_recordRTC?.recordingTimer}}</p>
+            <ng-template [ngIf]="_recordRTC?.blobUrl">
+              <audio [src]="_recordRTC?.blobUrl" controls="{{controls}}"></audio>
+            </ng-template>
+          </div>
+
+          <div class="btn-div">
+            <button (click)="right()" style="width: 50px; height: 50px">
+              <img src="./assets/left.svg" alt="lwft" width="15" height="15" class="rotate180">
+
+            </button>
+          </div>
+        </div>
+
+      </ng-template>
+
+
+
+
+      <ng-template ngbSlide id="audio2">
+        <img src="./assets/1.png" alt="Delhi Metro">
+        <div class="carousel-caption">
+          <h1 style="color: black">"Opeshift get pods"</h1>
+        </div>
+        <div class="rtc-dev">
+          <div class="btn-div">
+            <button (click)="left()" style="width: 50px; height: 50px">
+              <img src="./assets/left.svg" alt="lwft" width="15" height="15">
+            </button>
+          </div>
+          <div class="btn-div">
+            <button (click)="retry()">
+              <svg width="24" height="24" viewBox="0 0 24 24">
+                <path
+                  d="M12 15c1.66 0 2.99-1.34 2.99-3L15 6c0-1.66-1.34-3-3-3S9 4.34 9 6v6c0 1.66 1.34 3 3 3zm5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 15 6.7 12H5c0 3.42 2.72 6.23 6 6.72V22h2v-3.28c3.28-.48 6-3.3 6-6.72h-1.7z" />
+                <path d="M0 0h24v24H0z" fill="none" /></svg>
+            </button>
+          </div>
+          <div class="btn-div">
+            <button (click)="startVoiceRecord()">
+              <svg width="24" height="24" viewBox="0 0 24 24">
+                <path
+                  d="M12 15c1.66 0 2.99-1.34 2.99-3L15 6c0-1.66-1.34-3-3-3S9 4.34 9 6v6c0 1.66 1.34 3 3 3zm5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 15 6.7 12H5c0 3.42 2.72 6.23 6 6.72V22h2v-3.28c3.28-.48 6-3.3 6-6.72h-1.7z" />
+                <path d="M0 0h24v24H0z" fill="none" /></svg>
+            </button>
+            <p style="font-family: monospace;">{{_recordRTC?.recordingTimer}}</p>
+            <ng-template [ngIf]="_recordRTC?.blobUrl">
+              <audio [src]="_recordRTC?.blobUrl" controls></audio>
+            </ng-template>
+          </div>
+
+          <div class="btn-div">
+            <button (click)="right()" style="width: 50px; height: 50px">
+              <img src="./assets/left.svg" alt="lwft" width="15" height="15" class="rotate180">
+
+            </button>
+          </div>
+        </div>
+
+      </ng-template>
+
+
+      <ng-template ngbSlide id="audio3">
+        <img src="./assets/1.png" alt="Delhi Metro">
+        <div class="carousel-caption">
+          <h1 style="color: black">"Opeshift get services"</h1>
+        </div>
+        <div class="rtc-dev">
+          <div class="btn-div">
+            <button (click)="left()" style="width: 50px; height: 50px">
+              <img src="./assets/left.svg" alt="lwft" width="15" height="15">
+            </button>
+          </div>
+          <div class="btn-div">
+            <button (click)="retry()">
+              <svg width="24" height="24" viewBox="0 0 24 24">
+                <path
+                  d="M12 15c1.66 0 2.99-1.34 2.99-3L15 6c0-1.66-1.34-3-3-3S9 4.34 9 6v6c0 1.66 1.34 3 3 3zm5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 15 6.7 12H5c0 3.42 2.72 6.23 6 6.72V22h2v-3.28c3.28-.48 6-3.3 6-6.72h-1.7z" />
+                <path d="M0 0h24v24H0z" fill="none" /></svg>
+            </button>
+          </div>
+          <div class="btn-div">
+            <button (click)="startVoiceRecord()">
+              <svg width="24" height="24" viewBox="0 0 24 24">
+                <path
+                  d="M12 15c1.66 0 2.99-1.34 2.99-3L15 6c0-1.66-1.34-3-3-3S9 4.34 9 6v6c0 1.66 1.34 3 3 3zm5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 15 6.7 12H5c0 3.42 2.72 6.23 6 6.72V22h2v-3.28c3.28-.48 6-3.3 6-6.72h-1.7z" />
+                <path d="M0 0h24v24H0z" fill="none" /></svg>
+            </button>
+            <p style="font-family: monospace;">{{_recordRTC?.recordingTimer}}</p>
+            <ng-template [ngIf]="_recordRTC?.blobUrl">
+              <audio [src]="_recordRTC?.blobUrl" controls></audio>
+            </ng-template>
+          </div>
+
+          <div class="btn-div">
+            <button (click)="right()" style="width: 50px; height: 50px">
+              <img src="./assets/left.svg" alt="lwft" width="15" height="15" class="rotate180">
+
+            </button>
+          </div>
+        </div>
+
+      </ng-template>
+
+      <ng-template ngbSlide id="audio4">
+        <img src="./assets/1.png" alt="Delhi Metro">
+        <div class="carousel-caption">
+          <h1 style="color: black">"Opeshift get images"</h1>
+        </div>
+        <div class="rtc-dev">
+          <div class="btn-div">
+            <button (click)="left()" style="width: 50px; height: 50px">
+              <img src="./assets/left.svg" alt="lwft" width="15" height="15">
+            </button>
+          </div>
+          <div class="btn-div">
+            <button (click)="retry()">
+              <svg width="24" height="24" viewBox="0 0 24 24">
+                <path
+                  d="M12 15c1.66 0 2.99-1.34 2.99-3L15 6c0-1.66-1.34-3-3-3S9 4.34 9 6v6c0 1.66 1.34 3 3 3zm5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 15 6.7 12H5c0 3.42 2.72 6.23 6 6.72V22h2v-3.28c3.28-.48 6-3.3 6-6.72h-1.7z" />
+                <path d="M0 0h24v24H0z" fill="none" /></svg>
+            </button>
+          </div>
+          <div class="btn-div">
+            <button (click)="startVoiceRecord()">
+              <svg width="24" height="24" viewBox="0 0 24 24">
+                <path
+                  d="M12 15c1.66 0 2.99-1.34 2.99-3L15 6c0-1.66-1.34-3-3-3S9 4.34 9 6v6c0 1.66 1.34 3 3 3zm5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 15 6.7 12H5c0 3.42 2.72 6.23 6 6.72V22h2v-3.28c3.28-.48 6-3.3 6-6.72h-1.7z" />
+                <path d="M0 0h24v24H0z" fill="none" /></svg>
+            </button>
+            <p style="font-family: monospace;">{{_recordRTC?.recordingTimer}}</p>
+            <ng-template [ngIf]="_recordRTC?.blobUrl">
+              <audio [src]="_recordRTC?.blobUrl" controls></audio>
+            </ng-template>
+          </div>
+
+          <div class="btn-div">
+            <button (click)="right()" style="width: 50px; height: 50px">
+              <img src="./assets/left.svg" alt="lwft" width="15" height="15" class="rotate180">
+
+            </button>
+          </div>
+        </div>
+
+      </ng-template>
+
+    </ngb-carousel>
+  </div>
+
+</div>
